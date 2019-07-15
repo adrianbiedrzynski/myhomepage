@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adrian Biedrzynski</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4bcece8279.js"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav class="navigation">
+            <li class="navigation__list">
+                <ul><a href="#about__me">O mnie</a></ul>
+                <ul><a href="#tools">Narzędzia</a></ul>
+                <ul><a href="#">Projekty</a></ul>
+                <ul><a href="#form">Kontakt</a></ul>
+            </li>
+        </nav>
+        <div class="inner">
+            <h1>"It's time to do something diffrent then others"</h1>
+            <p>Adrian Biedrzynski</p>
+        </div>
+        <div class="video-container">
+            <video autoplay loop muted playsinline src="./video/Pexels Videos 1851768.mp4"></video>
+        </div>
+    </section>
+    <section id="about__me" class="about__me">
+        <div class="about__me-wrap">
+            <h2 class="about__me-wrap-title">ADRIAN BIEDRZYŃSKI</h2>
+            <div class="about__me-photo">
+                <img src="./img/19511445_2046446825583239_6201346484314211839_n.jpg" alt="moje zdjecie">
+            </div>
+            <article class="about__me-article">
+                <h2>Co, nie co- o mnie ...</h2>
+                <p> Hej, jestem początkującym frontend developerem, w zasadzie to juniorem- i to jeszcze nawet takim nie
+                    do końca ;) ale kadego dnia poznaje coraz wiecej i coraz więcej umiem !!! Ale do rzeczny, bo przecie
+                    czytasz to zeby mnie lepiej poznać. Prócz programowania uwielbiam grę w pokera - najchętniej grywam
+                    w odmiane Texas Hold'em, ale Omaha w dobrym towarzystwie równie wchodzi w gre :) uwazam, ze jest to
+                    jeden z bardziej wymagajacych sportów - ot takie szachy z większa dawka adrenaliny hahaha. Co wazne,
+                    lubię gotować i chyba ... robię to nie najgorzej, w kazdym razie, wszyscy zajadaja sie moja pizza
+                    ... mniam - w zasadzie to moze kiedys jej sprobojesz oO to bylo by piekne - programowanie w kuchni
+                    :D Jezeli chodzi o kwestie bardziej bardziej osobiste to tak, sluze mojemu ... kotu , co zrobic,
+                    kazdy musi miec swojego Pana, a ten moj przynajmniej daje sie czasem poglaskac w przerwach na
+                    drzemki ;p wiec to chyba tyle na razie na temat mojej osoby, wiec zapraszam Cie nizej, abys poznal
+                    to co juz umiem :)</p>
+            </article>
+        </div>
+    </section>
+    <section id="tools" class="tools">
+
+        <div class="tools__qoute-bgi">
+            <div class="tools__quote-wrap">
+                <h2 class="tools__quote-text">"Alone we can do so little; together we can do so much."</h2>
+            </div>
+        </div>
+        <div class="tools__icon">
+            <i class="fab fa-js-square"></i>
+
+            <i class="fab fa-html5"></i>
+
+            <i class="fab fa-css3-alt"></i>
+
+            <i class="fab fa-git-alt"></i>
+
+            <i class="fab fa-bootstrap"></i>
+
+            <i class="fas fa-terminal"></i>
+
+
+        </div>
+    </section>
+    <section class="projects">
+        <div class="projects__bgi">
+
+        </div>
+    </section>
+    <section id="form" class="form__wrap">
+        <div class="form__wrap-bgi">
+            <div class="form__wrap-bgi-c"></div>
+            <h2 class="form__wrap-bgi-text">Napisz do mnie :)</h2>
+        </div>
+        <form class="form" id="contactForm" method="post" novalidate action="/send-scripts.php">
+            <div class="form-row">
+                <label for="field-name">Name*</label>
+                <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole"
+                    pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+            </div>
+            <div class="form-row">
+                <label for="field-email">Email*</label>
+                <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email"
+                    pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+            </div>
+            <div class="form-row">
+                <label for="field-message">Message*</label>
+                <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message"
+                    pattern=".+"></textarea>
+            </div>
+            <div class="form-row">
+                <label class="checkbox-cnt">
+                    <input type="checkbox" data-error="Musisz wypełnić pole" name="regulation">
+                    <i class="state" aria-hidden="true"></i>
+                    <span>Wyrażam zgodę na przetwarzanie moich danych osobowych w celach marketingowych, poprzez
+                        przesyłanie informacji handlowych za pomocą poczty elektronicznej, na podany adres
+                        e-mail.</span>
+                </label>
+            </div>
+            <div class="form-row">
+                <button type="submit" class="submit-btn">
+                    Wyślij
+                </button>
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+        <i class="fab fa-facebook-f"><a href=""></a></i>
+        <i class="fab fa-instagram"><a href=""></a></i>
+        <i class="fab fa-linkedin"><a href=""></a></i>
+
+        <p class="footer__text">
+            Create by Adrian Biderman - all rights reserved ®
+        </p>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        function jumpToLocation(idToJump) {
+            $("html, body").animate({ scrollTop: $(idToJump).offset().top }, 1000);
+        };
+
+        $(function () {
+            // płynne przejście przy załadowaniu strony 
+
+            var jumpBlogowicz = window.location.hash;
+
+            if (jumpBlogowicz) {
+                jumpToLocation(jumpBlogowicz);
+            }
+
+            // obsługa linków z kotwicami 
+
+            $("a[href^='#']").click(function () {
+                var anchor = $(this).attr("href");
+                jumpToLocation(anchor);
+
+            });
+        }); 
+    </script>
+</body>
+
+</html>
